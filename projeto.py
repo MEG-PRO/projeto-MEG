@@ -1,7 +1,7 @@
 import random
 
-times = ['atletico mineiro', 'flamengo', 'corinthians', 'botafogo', 'vasco', 'internacional'] #oi
-saldo = 0
+times = ['atletico mineiro', 'flamengo', 'corinthians', 'botafogo', 'vasco', 'internacional']
+saldo = 100
 
 while True:
     print('================================\n' \
@@ -17,7 +17,12 @@ while True:
         saldo+=deposito
 
     elif comando == 2:
-        print('depósito é 1')
+        saque = float(input('saque: '))
+        if saque > saldo:
+            print('Operação inválida!')
+        else:
+            saldo -= saque
+            print(f'Saque realizado! Valor do saque: {saque}')
 
 
    
