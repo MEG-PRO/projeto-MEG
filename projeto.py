@@ -1,6 +1,6 @@
 import random
 
-times = ['atletico mineiro', 'flamengo', 'corinthians', 'botafogo', 'vasco', 'internacional']
+times = ['atletico mineiro', 'flamengo', 'corinthians', 'botafogo', 'vasco', 'internacional'] #oi
 saldo = 0
 
 while True:
